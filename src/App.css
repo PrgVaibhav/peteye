@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(234, 234, 234);
+}
+
+.auth-container {
+  width: 350px;
+  max-width: 100%;
+  box-shadow: 0 0 10px rgba(0 0, 0, .2);
+  margin: 40px auto 40px auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.auth-container .button_grp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0 0, 0, .2);
+  border-radius: 12px;
+
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: .9rem;
+  border-radius: 12px;
+  width: 100%;
+  margin: 4px;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.btn:active {
+  transform: scale(.9);
+}
+
+.button_grp .btn.active {
+  background-color: rgb(29, 29, 29);
+  color: white;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+  width: 100%;
+  /* padding: 10px; */
+}
+
+.form-container .form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin: auto;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.input-group .input-field {
+  padding: 12px;
+  border: none;
+  border: none;
+  box-shadow: 0 0 4px gray;
+  outline: none;
+  border-radius: 8px;
+  width: 100%;
+  background-color: transparent;
+  margin: auto;
+  transition: box-shadow .3s linear;
+}
+
+.input-group .input-field:focus {
+  box-shadow: 0 0 4px rgb(44, 132, 162);
+}
+
+.input-icon {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  color: gray;
+}
+
+.controls .login_btn {
+  background-color: rgb(34, 34, 34);
+  color: white;
+  width: 150px;
+}
+
+.auth-container-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.auth-container-footer .continue {
+  position: relative;
+  font-size: .9rem;
+  color: gray;
+}
+
+.continue::before {
+  position: absolute;
+  left: -50%;
+  top: 50%;
+  height: 1px;
+  width: 50px;
+  background-color: gray;
+  content: ""
+}
+
+.continue::after {
+  position: absolute;
+  right: -50%;
+  top: 50%;
+  height: 1px;
+  width: 50px;
+  background-color: gray;
+  content: ""
+}
+
+.auth-container-footer .icons {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.icons .google_icon,
+.facebook_icon,
+.apple_icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.facebook_icon {
+  color: blue;
+}
+
+
+.apple_icon {
+  color: black;
+}
+
+/* Navbar */
+
+nav {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0 0 2px 3px rgba(0 0, 0, .2);
+}
+
+.nav_logo {
+  font-size: 2rem;
+}
+
+.nav_control {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav_control p {
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+.nav_control .nav_btn {
+  background-color: gray;
+  color: white;
+  width: 100px;
+}
+
+.tos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tos p {
+  font-size: .9rem;
+}
+
+.tos .foot {
+  display: flex;
+  gap: 10px;
+}
+
+.tos .tos_p {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.error_message {
+  font-size: .8rem;
+  height: 8px;
+  color: red;
+  padding: 2px;
+}
+
+@media screen and (max-width: 450px) {
+  .nav_control {
+    display: none;
+  }
+}
